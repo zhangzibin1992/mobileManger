@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/tv_main"
+        android:layout_width="fill_parent"
+        android:layout_height="120dp"
+        android:text="一站式号码服务平台"
+        android:gravity="center"
+        android:background="#FF009ACD"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+         />
+
+    <ListView
+        android:id="@+id/listView_main"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </ListView>
+
+</LinearLayout>

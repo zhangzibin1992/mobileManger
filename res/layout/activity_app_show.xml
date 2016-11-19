@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AppShowActivity" >
+    
+     <com.android.app.adapter.MyactionBar 
+        android:id="@+id/my_action"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"></com.android.app.adapter.MyactionBar>
+
+   <include layout="@layout/listview_and_pressbar"/>
+   
+   <LinearLayout android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:orientation="horizontal"
+       android:layout_weight="0"
+       android:background="#ff0">
+
+       <CheckBox
+           android:id="@+id/cb_appshow"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:button="@drawable/checkbox"
+           android:text="全选"
+            />
+
+       <Button
+           android:id="@+id/button1"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="是否卸载选中项" />
+
+   </LinearLayout>
+
+</LinearLayout>

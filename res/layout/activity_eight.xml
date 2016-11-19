@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EightActivity" >
+
+    <com.android.app.adapter.MyactionBar 
+        android:id="@+id/my_action"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"></com.android.app.adapter.MyactionBar>
+    
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_weight="0"
+        android:background="#81D5F1">
+
+        <ProgressBar
+            android:id="@+id/pgb_dianchi"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="220dp"
+            android:layout_height="80dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:onClick="onClick"
+            android:progressDrawable="@drawable/dianchi"
+            android:max="100"
+            android:progress="50" />
+        
+        <View android:id="@+id/view_dianchi"
+            android:layout_width="18dp"
+            android:layout_height="37dp"
+            android:background="#FF8E01"
+            android:layout_toRightOf="@+id/pgb_dianchi"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/tv_dianchi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:text="50%"
+            android:textSize="25sp" />
+        
+    </RelativeLayout>
+    
+
+    <include layout="@layout/include_jiance_listview"/>
+
+</LinearLayout>

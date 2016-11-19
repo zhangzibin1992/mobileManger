@@ -1,0 +1,89 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SixActivity" >
+
+    <com.android.app.adapter.MyactionBar 
+        android:id="@+id/my_action"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"></com.android.app.adapter.MyactionBar>
+
+    <TextView
+        android:id="@+id/tv_xinghao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="手机型号"
+        android:layout_gravity="center_horizontal"
+        android:textSize="18sp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    
+
+    <TextView
+        android:id="@+id/tv_banbenhao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="15sp"
+        android:text="手机系统版本" />
+    
+    <ProgressBar
+        android:id="@+id/pgb_qingli"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:progressDrawable="@drawable/jindutiao"
+        android:progress="30"
+        android:max="100"
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+    
+     <TextView android:id="@+id/tv_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="4dp"
+            android:text="已用内存:30MB/100MB"
+            android:textSize="12sp" />
+    
+    <Button android:id="@+id/btn_qingli"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="一键清理"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/btn_color"
+        android:layout_gravity="center_horizontal"/>
+    
+    <include layout="@layout/layout_listview"/>
+    
+    
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_weight="0">
+
+        <CheckBox
+            android:id="@+id/chb_quanbuxuanze"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/checkbox"
+            android:text="全选" />
+
+        <Button
+            android:id="@+id/btn_jingcheng"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/btn_color"
+            android:text="@string/btn_title02" />
+        
+    </LinearLayout>
+    
+
+</LinearLayout>

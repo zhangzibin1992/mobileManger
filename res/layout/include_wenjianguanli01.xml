@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            
+     <RelativeLayout android:id="@+id/View_all"
+        style="@style/lengthandwidth"
+     >
+
+     <TextView
+        android:id="@+id/tv_loading_title_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:text="全部"
+        style="@style/size01"
+         />
+
+     <TextView
+        android:id="@+id/tv_loading_text_context"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_loading_title_all"
+        android:layout_toRightOf="@+id/tv_loading_title_all"
+        android:layout_marginLeft="20dp"
+        android:text="(计算中...)" 
+        style="@style/size02"/>
+
+   	 <ImageView
+        android:id="@+id/iv_loading_jiantou01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/ic_arrows_right"
+        android:visibility="invisible" />
+    
+     <ProgressBar
+        android:id="@+id/pgb_loading01"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:visibility="visible"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:indeterminateBehavior="repeat"
+        android:indeterminateOnly="true"
+        android:indeterminateDuration="600"
+        android:indeterminateDrawable="@drawable/pro_xuanzhuan"
+        />
+		</RelativeLayout>
+	<!-- 分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线 -->	
+        <View android:layout_width="match_parent"
+              android:layout_height="1dp"
+              android:background="#D0DFEF"/>
+     <!-- 分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线 -->       
+         <RelativeLayout android:id="@+id/View_wendang"
+         style="@style/lengthandwidth"
+     >
+
+     <TextView
+        android:id="@+id/tv_loading_title_wendang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:text="文档"
+        style="@style/size01"
+         />
+
+     <TextView
+        android:id="@+id/tv_loading_text_context2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_loading_title_wendang"
+        android:layout_toRightOf="@+id/tv_loading_title_wendang"
+        android:layout_marginLeft="20dp"
+        android:text="(计算中...)" 
+        style="@style/size02"/>
+
+   	 <ImageView
+        android:id="@+id/iv_loading_jiantou02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/ic_arrows_right"
+        android:visibility="invisible" />
+    
+     <ProgressBar
+        android:id="@+id/pgb_loading02"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:visibility="visible"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:indeterminateBehavior="repeat"
+        android:indeterminateOnly="true"
+        android:indeterminateDuration="600"
+        android:indeterminateDrawable="@drawable/pro_xuanzhuan"
+        />
+		</RelativeLayout>
+		
+         <!-- 分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线 -->	
+        <View android:layout_width="match_parent"
+              android:layout_height="1dp"
+              android:background="#D0DFEF"/>
+         <!-- 分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线 -->	    
+            
+       <RelativeLayout android:id="@+id/View_shipin"
+        style="@style/lengthandwidth"
+     >
+
+     <TextView
+        android:id="@+id/tv_loading_title_shiping"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:text="视频"
+        style="@style/size01"
+         />
+
+     <TextView
+        android:id="@+id/tv_loading_text_context3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_loading_title_shiping"
+        android:layout_toRightOf="@+id/tv_loading_title_shiping"
+        android:layout_marginLeft="20dp"
+        android:text="(计算中...)" 
+        style="@style/size02"/>
+
+   	 <ImageView
+        android:id="@+id/iv_loading_jiantou03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/ic_arrows_right"
+        android:visibility="invisible" />
+    
+     <ProgressBar
+        android:id="@+id/pgb_loading03"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:visibility="visible"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:indeterminateBehavior="repeat"
+        android:indeterminateOnly="true"
+        android:indeterminateDuration="600"
+        android:indeterminateDrawable="@drawable/pro_xuanzhuan"
+        />
+		</RelativeLayout>     
+		
+       <!-- 分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线 -->	
+        <View android:layout_width="match_parent"
+              android:layout_height="1dp"
+              android:background="#D0DFEF"/>
+     <!-- 分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线 --> 
+         <RelativeLayout android:id="@+id/View_yinpin"
+      	 style="@style/lengthandwidth"
+     >
+
+     <TextView
+        android:id="@+id/tv_loading_title_yinpin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:text="音频"
+        style="@style/size01"
+         />
+
+     <TextView
+        android:id="@+id/tv_loading_text_context4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_loading_title_yinpin"
+        android:layout_toRightOf="@+id/tv_loading_title_yinpin"
+        android:layout_marginLeft="20dp"
+        android:text="(计算中...)" 
+        style="@style/size02"/>
+
+   	 <ImageView
+        android:id="@+id/iv_loading_jiantou04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/ic_arrows_right"
+        android:visibility="invisible" />
+    
+     <ProgressBar
+        android:id="@+id/pgb_loading04"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:visibility="visible"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:indeterminateBehavior="repeat"
+        android:indeterminateOnly="true"
+        android:indeterminateDuration="600"
+        android:indeterminateDrawable="@drawable/pro_xuanzhuan"
+        />
+		</RelativeLayout>  
+		
+         <!-- 分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线 -->	
+        <View android:layout_width="match_parent"
+              android:layout_height="1dp"
+              android:background="#D0DFEF"/>
+     <!-- 分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线 --> 
+         <RelativeLayout android:id="@+id/View_tuxiang"
+        style="@style/lengthandwidth"
+     >
+
+     <TextView
+        android:id="@+id/tv_loading_title_tuxiang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:text="图像"
+        style="@style/size01"
+         />
+
+     <TextView
+        android:id="@+id/tv_loading_text_context5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_loading_title_tuxiang"
+        android:layout_toRightOf="@+id/tv_loading_title_tuxiang"
+        android:layout_marginLeft="20dp"
+        android:text="(计算中...)" 
+        style="@style/size02"/>
+
+   	 <ImageView
+        android:id="@+id/iv_loading_jiantou05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/ic_arrows_right"
+        android:visibility="invisible" />
+    
+     <ProgressBar
+        android:id="@+id/pgb_loading05"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:visibility="visible"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:indeterminateBehavior="repeat"
+        android:indeterminateOnly="true"
+        android:indeterminateDuration="600"
+        android:indeterminateDrawable="@drawable/pro_xuanzhuan"
+        />
+		</RelativeLayout>    
+		
+          <!-- 分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线 -->	
+        <View android:layout_width="match_parent"
+              android:layout_height="1dp"
+              android:background="#D0DFEF"/>
+     <!-- 分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线 -->
+        <RelativeLayout android:id="@+id/View_yasuobao"
+        style="@style/lengthandwidth"
+     >
+
+     <TextView
+        android:id="@+id/tv_loading_title_yasuobao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:text="压缩包"
+        style="@style/size01"
+         />
+
+     <TextView
+        android:id="@+id/tv_loading_text_context6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_loading_title_yasuobao"
+        android:layout_toRightOf="@+id/tv_loading_title_yasuobao"
+        android:layout_marginLeft="20dp"
+        android:text="(计算中...)" 
+        style="@style/size02"/>
+
+   	 <ImageView
+        android:id="@+id/iv_loading_jiantou06"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/ic_arrows_right"
+        android:visibility="invisible" />
+    
+     <ProgressBar
+        android:id="@+id/pgb_loading06"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:visibility="visible"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:indeterminateBehavior="repeat"
+        android:indeterminateOnly="true"
+        android:indeterminateDuration="600"
+        android:indeterminateDrawable="@drawable/pro_xuanzhuan"
+        />
+		</RelativeLayout>   
+		
+        <!-- 分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线 -->	
+        <View android:layout_width="match_parent"
+              android:layout_height="1dp"
+              android:background="#D0DFEF"/>
+     <!-- 分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线 --> 
+         <RelativeLayout android:id="@+id/View_chengxubao"
+        style="@style/lengthandwidth"
+     >
+
+     <TextView
+        android:id="@+id/tv_loading_title_chengxubao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:text="程序包"
+        style="@style/size01"
+         />
+
+     <TextView
+        android:id="@+id/tv_loading_text_context7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_loading_title_chengxubao"
+        android:layout_toRightOf="@+id/tv_loading_title_chengxubao"
+        android:layout_marginLeft="20dp"
+        android:text="(计算中...)" 
+        style="@style/size02"/>
+
+   	 <ImageView
+        android:id="@+id/iv_loading_jiantou07"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/ic_arrows_right"
+        android:visibility="invisible" />
+    
+     <ProgressBar
+        android:id="@+id/pgb_loading07"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:visibility="visible"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:indeterminateBehavior="repeat"
+        android:indeterminateOnly="true"
+        android:indeterminateDuration="600"
+        android:indeterminateDrawable="@drawable/pro_xuanzhuan"
+        />
+		</RelativeLayout>
+		
+          <!-- 分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线 -->	
+        <View android:layout_width="match_parent"
+              android:layout_height="1dp"
+              android:background="#D0DFEF"/>
+     <!-- 分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线分割线 --> 
+        
+        
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

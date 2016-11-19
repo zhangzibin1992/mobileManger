@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1" >
+
+    <ListView
+        android:id="@+id/lv_applistview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible" >
+    </ListView>
+
+    <ProgressBar
+        android:id="@+id/pr_1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:visibility="visible"
+        android:indeterminateBehavior="repeat"
+        android:indeterminateDrawable="@drawable/pro_xuanzhuan"
+        android:indeterminateDuration="600"
+        android:indeterminateOnly="true"
+        
+         />
+
+</FrameLayout>

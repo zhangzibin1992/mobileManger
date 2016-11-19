@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".NineActivity" >
+
+    <com.android.app.adapter.MyactionBar 
+        android:id="@+id/my_action"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"></com.android.app.adapter.MyactionBar>
+    
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#1122CC"
+        android:layout_weight="0"
+        >
+
+
+        <TextView
+            android:id="@+id/tv_wenjianguanli_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_wenjianguanli_yifaxian"
+            android:text="0.00M"
+            android:layout_marginLeft="10dp"
+            android:textSize="45sp"
+            android:textColor="#fff"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+       <TextView
+           android:id="@+id/tv_wenjianguanli_yifaxian"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignBaseline="@+id/tv_wenjianguanli_number"
+           android:layout_alignBottom="@+id/tv_wenjianguanli_number"
+           android:layout_marginLeft="30dp"
+           android:text="已发现"
+           android:textColor="#fff"
+           android:textSize="20sp" />
+
+    </RelativeLayout>
+    
+    
+    
+    <include layout="@layout/include_wenjianguanli01"/>
+
+</LinearLayout>

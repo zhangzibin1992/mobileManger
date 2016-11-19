@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AboutUSActivity" >
+
+    <com.android.app.adapter.MyactionBar android:id="@+id/my_action"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"></com.android.app.adapter.MyactionBar>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="182dp"
+        android:layout_height="291dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/androidy" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="版本号V1.0.0" 
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"/>
+
+</LinearLayout>
